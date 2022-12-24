@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>   <!--Taxa de rejeição (bounce rate): medida de desvalorização do site.-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <!--Para usar a tag picture, eu coloco a maior imagem na tag img, depois (de baixo para cima), eu crio um source:media:type para uma imagem média e outro para imagem pequena.
+    Eu troco o min-width para max-width, coloco 50 pixels a mais, escrevo o caminho da foto no parâmetro srcset e coloco o formato da foto no parâmetro type.
+    media types mais usados:
+    application/zip
+    text/html
+    text/css
+    text/javascript
+    video/mp4
+    video/h264
+    video/jpeg
+    audio/aac
+    audio/mpeg
+    font/ttf
+    image/jpeg
+    image/png
+    para mais: https://www.iana.org/assignments/media-types/media-types.xhtml-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/silver_waves.mp3" controls></audio>   <!--Compatibilidade: MP3/ WAV/ OGG-->
+    <audio preload="metadata" controls loop>   <!--auto só considera que o site terminou de carregar quando carregar todo o áudio tbm (RUIM). metadata carrega apenas algumas informações do arquivo (BOM).-->
+        <source src="midia/silver_waves.mp3" type="audio/mpeg">
+        <source src="midia/silver_waves.ogg" type="audio/ogg">
+        <source src="midia/silver_waves.wav" type="audio/wav">
+        <p>Infelizmente, seu navegador não consegue reproduzir áudio. <a href="midia/silver_waves.mp3">Clique aqui</a> para baixar o arquivo mp3</p>
+    </audio>
+</body>
+</html>

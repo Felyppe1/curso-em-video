@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+header {
+    background-image: linear-gradient(to bottom, #2fc070, #269055, #134c2f);
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    height: 180px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.523);
+}
+
+header > h1 {
+    margin: 0px;
+    padding: 25px;
+}
+
+header > p {
+    margin: 0px;
+}
+
+header > nav {
+    text-align: left;
+    margin: 0px;
+}
+
+header > nav > a {
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}
+
+header > nav > a:hover {
+    background-color: rgba(211, 211, 211, 0.449);
+}
+
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf);    
+}
+
+body {
+    background-color: rgb(230, 230, 171);
+    margin: 0px;
+}
+
+main {
+    background: white;
+    width: 900px;
+    padding: 20px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.516);
+}
+
+main > h1 {
+    font-family: android;
+    color: #207747;
+    margin: 0px;
+}
+
+main > h2 {
+    font-family: android;
+    color: #207747;
+    background-image: linear-gradient(to right, #d2f5e2, white);
+}
+
+main > p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.ancora {
+    text-decoration: none;
+    color: #0f522d;
+    background-color: #d2f5e2;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.lista {
+    display: inline-block;
+    width: 400px;
+}
+
+.elem {
+    text-decoration: underline;
+}
+
+main#video {
+    width: 900px;
+    text-align: center;
+    background-color: #0f522d;
+    padding: 20px;
+}
+
+div#extra {
+    background-color: #c9f3dc;
+    margin: 0px 5px 0px 5px;
+    border-radius: 10px;
+}
+
+p#titulo {
+    background-color: #279f5d;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+.conteudo {
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+}
+
+footer {
+    background-color: #0a512a;
+    height: 35px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer > p {
+    padding: 7px;
+    color: white;
+}
+
+.rodape {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

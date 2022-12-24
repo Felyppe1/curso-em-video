@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando Links</h1>
+    <h2>Links externos</h2>
+    <p>Você pode acessar o <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">meu repositório público no GitHub</a></p>   <!--Botar esses 2 parâmetros para o link abrir em outra aba.-->
+    <p>Você pode acessar também o <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">meu canal gratuito no Youtube</a></p>
+    <h2>Links internos</h2>
+    <p>Esta é a primeira páginas do site. Se você quiser, pode acessar também a minha <a href="pag2.html" target="_blank" rel="next">segunda página</a>
+    </p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag3.html" target="_self" rel="next">página de notícias</a></p>
+    <h2>Links para download</h2>
+    <ol>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em PDF</a></li>   <!--O parâmetro download recebe o nome do arquivo a ser baixado. O parâmetro type necessita do tipo de download. Pode achar o tipo de download no site https://www.iana.org/assignments/media-types/media-types.xhtml-->
+        <li><a href="livro/ezyzip.zip" download="ezyzip.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ol>
+</body>
+</html>
