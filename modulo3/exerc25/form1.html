@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!-- 
+        método get = para dados não-sensíveis, para a URL ser compartilhável, (só pode 3mil bytes = 3mil letras)
+        método post = dados sensíveis (na vdd, ideal estudar https), envio de arquivos
+     -->
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- o action n tá funcionando ainda (é pra lá que os dados serão enviados) -->
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> <!-- label é IMPORTANTE para ligar a etiqueta do formulário ao objeto -->
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p> <!-- name é mais útil para HTML e PHP / id é mais útil para JavaScript e Label -->
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
